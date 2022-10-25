@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jarvis</title>
+  <title>Egyptian Party</title>
 
   <!-- favicon -->
   <link rel="shortcut icon" href="" type="image/x-icon">
@@ -23,32 +23,35 @@
 
   <link rel="stylesheet" href="assets/bootstrap.min.css">
 
-  <!-- owl carousel -->
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
-  <!-- Own style -->
+
+  <!-- css stylesheet -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
+  <section >
+    <div class="fullBackground">
+      <header class="header-text d-flex flex-column justify-content-center align-items-center text-white">
+        <h1 class="display-1 fw-bold">Egyptian Party</h1>
+        <p class="fs-3">Let's Party</p>
+      </header>
+    </div>
 
-  <div class="sidebar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Details</a></li>
-      <li><a href="#">Duration</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <span class="sidebarBtn">
-      <i class="fas fa-bars fa-xl"></i>
-    </span>
-  </div>
 
-  <header class="header-text d-flex flex-column justify-content-center align-items-center text-white">
-    <h1 class="display-1 fw-bold">Egyptian Party</h1>
-    <p class="fs-3">Let's Party</p>
-  </header>
+
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Details</a></li>
+        <li><a href="#">Duration</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span class="sidebarBtn">
+        <i class="fas fa-bars fa-xl"></i>
+      </span>
+    </div>
+  </section>
 
   <section class="accordion text-white bg-dark">
     <h3 class="acc-title">Singer One</h3>
@@ -126,7 +129,10 @@
             <input type="email" class="form-control mb-4" placeholder="Email">
             <textarea class="form-control" placeholder="Send a Message" rows="4" id="message"
               maxlength="100"></textarea>
-            <div class="remaining mt-2"></div>
+            <div class="remaining mt-2">
+              <span>100</span> characters are remaining
+            </div>
+            <button class="send">SEND MESSAGE</button>
           </form>
         </div>
       </div>
@@ -141,8 +147,10 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  -->
   <script src="js/jquery-3.6.1.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="full_clip-master/src/fullclip.min.js"></script>
   <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

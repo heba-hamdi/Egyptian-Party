@@ -1,4 +1,16 @@
 $(document).ready(function(){
+//  slider
+
+$('.fullBackground').fullClip({
+  images: ['images/slide1-1.jpg', 'images/slide2-1.jpg', 'images/slide3-1.jpg'],
+  transitionTime: 1000,
+  wait: 3000,
+})
+
+
+
+
+// sidebar button
     $('.sidebarBtn').click(function(){
         $('.sidebar').toggleClass('active');
     })
@@ -49,17 +61,18 @@ console.log(msgTxt);
 
 $('#message').keyup(function (e) { 
 
-  let typed=($(this).val().length);
+  let typed=($(this).val().trim().length);
 
   let remText=msgTxt-typed;
   console.log(remText);
 
- 
-
-  if(remText==0){
-    $('.remaining').html(`<span>Characters have finished</span>`);
+  $('.remaining').html(`<span>${remText}</span> characters are remaining`);
+  
+  if(remText>0){
+    $('.remaining').html(`<span>${remText}</span> characters are remaining`);
+   
   }else{
-    $('.remaining').html(`<span>${remText} are remaining</span>`);
+    $('.remaining').html(`<span>Characters have finished</span>`);
   }
 
 });
