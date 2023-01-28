@@ -22,7 +22,7 @@ $('.fullBackground').fullClip({
   })
 })
 
-let partyEvent=new Date("Sat Dec 31 2022 22:30:00").getTime();
+let partyEvent=new Date("Sat June 31 2023 22:30:00").getTime();
 
 let eventCounter=setInterval(()=>{
   let now=new Date().getTime();
